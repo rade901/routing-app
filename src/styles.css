@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: #666565;
+    color: aliceblue;
+    overflow: hidden;
+}
+
+h1 {
+    padding-bottom: 2rem;
+}
+
+.app-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header {
+    text-align: center;
+}
+
+.links a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+
+footer {
+    text-align: center;
+    color: aliceblue;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
