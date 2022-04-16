@@ -1,10 +1,13 @@
 <header>
-    <h1>{{title}}</h1>
+    <a [routerLink]="['/']">
+        <h1>{{title}}</h1>
+    </a>
     <div class="links">
         <a [routerLink]="['/']">First</a>
         <a [routerLink]="['/second']">Second</a>
         <a [routerLink]="['/contact']">Contact</a>
         <a [routerLink]="['/info']">Info</a>
+        <a href="">{{time}}</a>
 
     </div>
 </header>

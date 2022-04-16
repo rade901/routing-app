@@ -9,9 +9,6 @@ import { ContactComponent } from './contact/contact.component';
 import { InfoComponent } from './info/info.component';
 
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
