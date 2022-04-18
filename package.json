@@ -21,6 +21,9 @@
     "angular-material": "^1.2.5",
     "angular-material-pagination": "^1.0.2",
     "angular-paginator": "^8.0.0",
+    "angular2-notifications": "^12.0.0",
+    "cookieconsent": "^3.1.1",
+    "ngx-cookieconsent": "^2.2.3",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
