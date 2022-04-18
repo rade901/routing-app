@@ -3,11 +3,20 @@
         <h1>{{title}}</h1>
     </a>
     <div class="links">
-        <a [routerLink]="['/']">First</a>
-        <a [routerLink]="['/second']">Second</a>
-        <a [routerLink]="['/contact']">Contact</a>
-        <a [routerLink]="['/info']">Info</a>
-        <a href="">{{time}}</a>
+        <a class="link-all" *ngIf="showMe" [routerLink]="['/']">First</a>
+        <a class="link-all" *ngIf="showMe" [routerLink]="['/second']">Second</a>
+        <a class="link-all" *ngIf="showMe" [routerLink]="['/contact']">Contact</a>
+        <a class="link-all" *ngIf="showMe" [routerLink]="['/info']">Info</a>
+        <a class="link-all" *ngIf="showMe" href="">{{time}}</a>
+        <div (click)="toggle()" class="hamburger-container">
+
+            <div class="hamburger">
+                <div class="line-top"></div>
+                <div class="line-middle"></div>
+                <div class="line-bottom"></div>
+            </div>
+
+        </div>
 
     </div>
 </header>
