@@ -7,6 +7,10 @@ import { SecondComponent } from './second/second.component';
 import { ContactComponent } from './contact/contact.component';
 import { InfoComponent } from './info/info.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { DatePipe } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+import { TodosComponent } from './components/todos/todos.component';
 
 
 @NgModule({
@@ -15,14 +19,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FirstComponent,
     SecondComponent,
     ContactComponent,
-    InfoComponent
+    InfoComponent,
+    TodosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
