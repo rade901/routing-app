@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { DatePipe } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TodosComponent } from './components/todos/todos.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { TodosComponent } from './components/todos/todos.component';
     SecondComponent,
     ContactComponent,
     InfoComponent,
-    TodosComponent
+    TodosComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
